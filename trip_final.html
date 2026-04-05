@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Europe 2026 🌍</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f4f0;color:#1a1a18}
+.hero{background:linear-gradient(135deg,#1a1a2e,#0f3460);color:#fff;padding:32px 20px 24px;text-align:center}
+.hero h1{font-size:26px;font-weight:700;margin-bottom:6px}
+.hero p{font-size:13px;color:#a0b4d0;margin-bottom:16px}
+.cities{display:flex;justify-content:center;gap:6px;flex-wrap:wrap}
+.city{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:20px;padding:4px 12px;font-size:12px}
+nav{background:#fff;border-bottom:1px solid #e8e6e0;position:sticky;top:0;z-index:100;overflow-x:auto;white-space:nowrap;padding:10px 12px;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+.nb{display:inline-block;padding:6px 12px;border-radius:20px;border:1.5px solid #ddd;background:transparent;color:#666;cursor:pointer;font-size:11px;font-weight:500;margin-right:5px;transition:all .2s;text-decoration:none}
+.nb.on{color:#fff;border-color:transparent}
+.wrap{max-width:640px;margin:0 auto;padding:20px 14px 60px}
+.day{display:none}.day.on{display:block}
+.dhead{border-radius:12px;padding:14px 18px;margin-bottom:14px}
+.dtag{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;opacity:.65;margin-bottom:4px}
+.dnote{font-size:12px;line-height:1.5;opacity:.85}
+.tl{position:relative;padding-left:52px}
+.tl::before{content:'';position:absolute;left:38px;top:0;bottom:0;width:1.5px;background:#e0ddd6}
+.ti{position:relative;margin-bottom:8px}
+.tt{position:absolute;left:-52px;width:44px;text-align:right;font-size:9px;font-weight:600;color:#aaa;padding-top:10px}
+.dot{position:absolute;left:-15px;top:11px;width:9px;height:9px;border-radius:50%;border:2px solid #f5f4f0}
+.tc{background:#fff;border:1px solid #e8e6e0;border-radius:10px;padding:10px 12px;border-left-width:3px}
+.tc-top{display:flex;align-items:center;gap:7px}
+.ico{font-size:15px;flex-shrink:0}
+.lbl{font-size:13px;font-weight:600;flex:1}
+.sub{font-size:11px;color:#888;margin-top:3px;margin-left:22px;line-height:1.5}
+.tip{font-size:12px;color:#555;margin-top:7px;margin-left:22px;line-height:1.5;padding:7px 10px;border-radius:7px}
+.bk{font-size:10px;font-weight:700;background:#fff0f0;color:#c0392b;border:1px solid #f5c6c6;border-radius:99px;padding:2px 7px;white-space:nowrap}
+.dn{font-size:10px;font-weight:700;background:#f0faf0;color:#27ae60;border:1px solid #b8e6b8;border-radius:99px;padding:2px 7px}
+.ml{background:#fffbf5!important;border-left-color:#e67e22!important}
+.ml .dot{background:#e67e22}
+.tr{border-left-color:#3498db!important}
+.tr .dot{background:#3498db}
+.si{border-left-color:#27ae60!important}
+.si .dot{background:#27ae60}
+.wk{border-left-color:#8e44ad!important}
+.wk .dot{background:#8e44ad}
+.lg{border-left-color:#bbb!important}
+.lg .dot{background:#bbb}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div style="font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#a0b4d0;margin-bottom:8px">Family Trip · June 7–15, 2026</div>
+  <h1>Europe 2026 🌍</h1>
+  <p>9 days · Brussels · Paris · Milan · Rome</p>
+  <div class="cities">
+    <span class="city">🇧🇪 Brussels</span>
+    <span class="city">🇫🇷 Paris</span>
+    <span class="city">🇮🇹 Milan</span>
+    <span class="city">🇮🇹 Rome</span>
+    <span class="city">✈️ São Paulo</span>
+  </div>
+</div>
+
+<nav id="nav">
+  <a class="nb on" onclick="show(0)" style="background:#534AB7;border-color:#534AB7">🇧🇪 Jun 7</a>
+  <a class="nb" onclick="show(1)">🇫🇷 Jun 8</a>
+  <a class="nb" onclick="show(2)">🇫🇷 Jun 9</a>
+  <a class="nb" onclick="show(3)">🇫🇷 Jun 10</a>
+  <a class="nb" onclick="show(4)">🇮🇹 Jun 11</a>
+  <a class="nb" onclick="show(5)">🇮🇹 Jun 12</a>
+  <a class="nb" onclick="show(6)">🇮🇹 Jun 13</a>
+  <a class="nb" onclick="show(7)">🇮🇹 Jun 14</a>
+  <a class="nb" onclick="show(8)">✈️ Jun 15</a>
+</nav>
+
+<div class="wrap">
+
+<!-- DAY 0: JUN 7 -->
+<div class="day on" id="d0">
+  <div class="dhead" style="background:#EEEDFE;border-left:4px solid #534AB7">
+    <div class="dtag" style="color:#534AB7">Jun 7 · Sunday · Brussels 🇧🇪</div>
+    <div class="dnote" style="color:#3C3489">Arrival day — easy pace. Wife arrives from Brazil. Enjoy the city with no pressure.</div>
+  </div>
+  <div class="tl">
+    <div class="ti"><div class="tt">Arrive</div><div class="dot" style="background:#534AB7;box-shadow:0 0 0 3px #EEEDFE"></div>
+      <div class="tc lg"><div class="tc-top"><span class="ico">✈️</span><span class="lbl">Arrive from Brazil</span></div>
+      <div class="sub">Collect luggage · transfer to hotel · freshen up</div></div></div>
+
+    <div class="ti"><div class="tt">14:00</div><div class="dot" style="background:#534AB7;box-shadow:0 0 0 3px #EEEDFE"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🏛️</span><span class="lbl">Grand Place</span></div>
+      <div class="sub">UNESCO square · one of Europe's most beautiful</div>
+      <div class="tip" style="background:#EEEDFE;color:#3C3489">→ Just walk in, look up, and spin around slowly — the whole square surrounds you with gold. Grab a coffee at one of the terrace cafés right on the square.</div></div></div>
+
+    <div class="ti"><div class="tt">15:30</div><div class="dot" style="background:#534AB7;box-shadow:0 0 0 3px #EEEDFE"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🚶</span><span class="lbl">City Stroll</span></div>
+      <div class="sub">Manneken Pis · Galeries Royales · Sablon</div>
+      <div class="tip" style="background:#EEEDFE;color:#3C3489">→ Stop into any chocolate shop on the Galeries Royales arcade — buy a box of pralines to take home. Don't leave Brussels without trying a waffle from a street stand.</div></div></div>
+
+    <div class="ti"><div class="tt">13:00</div><div class="dot" style="background:#534AB7;box-shadow:0 0 0 3px #EEEDFE"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Lunch · Chez Léon</span></div>
+      <div class="sub">Classic Belgian moules-frites · book ahead</div></div></div>
+
+    <div class="ti"><div class="tt">19:30</div><div class="dot" style="background:#534AB7;box-shadow:0 0 0 3px #EEEDFE"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Dinner with friend</span></div></div></div>
+  </div>
+</div>
+
+<!-- DAY 1: JUN 8 -->
+<div class="day" id="d1">
+  <div class="dhead" style="background:#E6F1FB;border-left:4px solid #185FA5">
+    <div class="dtag" style="color:#185FA5">Jun 8 · Monday · Brussels → Paris 🇫🇷</div>
+    <div class="dnote" style="color:#0C447C">⚠️ Book the Brussels→Paris train and Eiffel Tower tickets now — both sell out.</div>
+  </div>
+  <div class="tl">
+    <div class="ti"><div class="tt">06:43</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc tr"><div class="tc-top"><span class="ico">🚂</span><span class="lbl">Train: Brussels → Paris</span><span class="bk">BOOK</span></div>
+      <div class="sub">Brussels Midi → Paris Nord · 1h 27min · Eurostar</div></div></div>
+
+    <div class="ti"><div class="tt">09:30</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc lg"><div class="tc-top"><span class="ico">🏨</span><span class="lbl">Hotel check-in / luggage drop</span></div>
+      <div class="sub">Freshen up · plan the day</div></div></div>
+
+    <div class="ti"><div class="tt">11:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🏛️</span><span class="lbl">Arc de Triomphe</span><span class="bk">BOOK</span></div>
+      <div class="sub">Climb to the top · Champs-Élysées panorama · €13</div>
+      <div class="tip" style="background:#E6F1FB;color:#0C447C">→ Buy a small souvenir or macarons from one of the Champs-Élysées shops on the way back down — it's the most famous avenue in the world, enjoy the walk.</div></div></div>
+
+    <div class="ti"><div class="tt">13:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Lunch · L'Entrecôte</span></div>
+      <div class="sub">Famous for one dish: steak-frites with secret sauce</div></div></div>
+
+    <div class="ti"><div class="tt">14:30</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🚤</span><span class="lbl">Seine Cruise</span></div>
+      <div class="sub">~1 hour · passes Notre-Dame, Eiffel Tower and Louvre</div>
+      <div class="tip" style="background:#E6F1FB;color:#0C447C">→ Sit on the open top deck, grab a glass of wine from the bar on board, and just enjoy Paris floating by. No rushing, no walking — pure relaxation.</div></div></div>
+
+    <div class="ti"><div class="tt">17:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🗼</span><span class="lbl">Eiffel Tower</span><span class="bk">BOOK</span></div>
+      <div class="sub">Timed entry · book summit in advance · evening light is magical</div>
+      <div class="tip" style="background:#E6F1FB;color:#0C447C">→ Book the 9–10 PM slot so you can watch the light show from the top — every hour on the hour it sparkles with 20,000 lights for 5 minutes. Pure magic.</div></div></div>
+
+    <div class="ti"><div class="tt">20:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Dinner · Café de l'Homme</span></div>
+      <div class="sub">Floor-to-ceiling windows facing the Eiffel Tower · book ahead</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 2: JUN 9 -->
+<div class="day" id="d2">
+  <div class="dhead" style="background:#E6F1FB;border-left:4px solid #185FA5">
+    <div class="dtag" style="color:#185FA5">Jun 9 · Tuesday · Paris — Versailles 🇫🇷</div>
+    <div class="dnote" style="color:#0C447C">Tuesday = musical fountains at Versailles are running. A very special treat!</div>
+  </div>
+  <div class="tl">
+    <div class="ti"><div class="tt">08:30</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc tr"><div class="tc-top"><span class="ico">🚆</span><span class="lbl">RER C to Versailles</span></div>
+      <div class="sub">45 min from Paris · depart early to beat the crowds</div></div></div>
+
+    <div class="ti"><div class="tt">09:30</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">👑</span><span class="lbl">Palace of Versailles</span><span class="bk">BOOK</span></div>
+      <div class="sub">Hall of Mirrors · Royal Apartments · Marie Antoinette's rooms</div>
+      <div class="tip" style="background:#E6F1FB;color:#0C447C">→ Start with the Hall of Mirrors first thing — it's the most stunning room and far less crowded at 9:30 AM. Take your time in Marie Antoinette's private apartments.</div></div></div>
+
+    <div class="ti"><div class="tt">12:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🌿</span><span class="lbl">Versailles Gardens</span></div>
+      <div class="sub">Musical fountains on Tuesdays! · rent a golf cart to explore</div>
+      <div class="tip" style="background:#E6F1FB;color:#0C447C">→ Rent a golf cart at the garden entrance — the gardens are enormous and walking everything is exhausting. Follow the fountain music and find a spot by the Grand Canal to sit and watch.</div></div></div>
+
+    <div class="ti"><div class="tt">14:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Lunch · La Flottille</span></div>
+      <div class="sub">Inside the estate on the Grand Canal</div></div></div>
+
+    <div class="ti"><div class="tt">16:30</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc tr"><div class="tc-top"><span class="ico">🚆</span><span class="lbl">Return to Paris</span></div>
+      <div class="sub">RER C · ~45 min</div></div></div>
+
+    <div class="ti"><div class="tt">18:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🎨</span><span class="lbl">Montmartre</span></div>
+      <div class="sub">Sacré-Cœur · Place du Tertre · sunset views</div>
+      <div class="tip" style="background:#E6F1FB;color:#0C447C">→ Sit on the steps of Sacré-Cœur at sunset with a bottle of wine from a nearby shop — locals do it all the time. Watch the city light up below you as the sky turns pink.</div></div></div>
+
+    <div class="ti"><div class="tt">20:30</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Dinner · Le Consulat</span></div>
+      <div class="sub">Classic bistro right in Montmartre</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 3: JUN 10 -->
+<div class="day" id="d3">
+  <div class="dhead" style="background:#E6F1FB;border-left:4px solid #185FA5">
+    <div class="dtag" style="color:#185FA5">Jun 10 · Wednesday · Paris — Art & History 🇫🇷</div>
+    <div class="dnote" style="color:#0C447C">Book Notre-Dame slot on the official app the morning of Jun 10.</div>
+  </div>
+  <div class="tl">
+    <div class="ti"><div class="tt">09:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🖼️</span><span class="lbl">The Louvre</span><span class="dn">✅ Done</span></div>
+      <div class="sub">Mona Lisa · Venus de Milo · Winged Victory</div>
+      <div class="tip" style="background:#E6F1FB;color:#0C447C">→ Grab the free map at the entrance and circle your 3 must-sees before going in. Don't try to see everything — pick a wing you love and enjoy it. The gift shop has beautiful art prints to take home.</div></div></div>
+
+    <div class="ti"><div class="tt">12:30</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Lunch near Île de la Cité</span></div>
+      <div class="sub">5-min walk to the island · many great bistros</div></div></div>
+
+    <div class="ti"><div class="tt">14:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">✨</span><span class="lbl">Sainte-Chapelle</span><span class="bk">BOOK</span></div>
+      <div class="sub">13th-century stained glass walls · €22 · book ahead</div>
+      <div class="tip" style="background:#E6F1FB;color:#0C447C">→ Walk slowly up the spiral staircase to the Upper Chapel and stop for a moment when the room of coloured light opens up — it genuinely takes your breath away. Best experienced in afternoon sun.</div></div></div>
+
+    <div class="ti"><div class="tt">15:30</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">⛪</span><span class="lbl">Notre-Dame Cathedral</span></div>
+      <div class="sub">Reopened 2024 · free · grab same-day slot on app that morning</div>
+      <div class="tip" style="background:#E6F1FB;color:#0C447C">→ Walk all the way to the front and look up at the facade slowly — every detail tells a story. The rose windows inside glow with colour. Grab the free audio guide on the official app before entering.</div></div></div>
+
+    <div class="ti"><div class="tt">17:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🚶</span><span class="lbl">Le Marais Walk</span></div>
+      <div class="sub">Place des Vosges · Jewish Quarter · boutiques and galleries</div>
+      <div class="tip" style="background:#E6F1FB;color:#0C447C">→ Duck into the art galleries along rue de Bretagne — most are free and have incredible work. Stop for a falafel on rue des Rosiers, the best in Paris. Browse the independent boutiques on rue Charlot.</div></div></div>
+
+    <div class="ti"><div class="tt">20:00</div><div class="dot" style="background:#185FA5;box-shadow:0 0 0 3px #E6F1FB"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Dinner · Bouillon Chartier</span></div>
+      <div class="sub">Historic brasserie · no reservations · arrive early</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 4: JUN 11 -->
+<div class="day" id="d4">
+  <div class="dhead" style="background:#EAF3DE;border-left:4px solid #3B6D11">
+    <div class="dtag" style="color:#3B6D11">Jun 11 · Thursday · Paris → Milan 🇫🇷→🇮🇹</div>
+    <div class="dnote" style="color:#27500A">⚠️ Only 2 Paris→Milan trains this day due to engineering works. Book immediately!</div>
+  </div>
+  <div class="tl">
+    <div class="ti"><div class="tt">06:45</div><div class="dot" style="background:#3B6D11;box-shadow:0 0 0 3px #EAF3DE"></div>
+      <div class="tc tr"><div class="tc-top"><span class="ico">🚂</span><span class="lbl">Train: Paris → Milan</span><span class="bk">BOOK</span></div>
+      <div class="sub">Paris Gare de Lyon → Milano Centrale · ~7h · only 2 trains/day!</div></div></div>
+
+    <div class="ti"><div class="tt">14:00</div><div class="dot" style="background:#3B6D11;box-shadow:0 0 0 3px #EAF3DE"></div>
+      <div class="tc lg"><div class="tc-top"><span class="ico">🏨</span><span class="lbl">Luggage drop at station</span></div>
+      <div class="sub">Left luggage at Milano Centrale · explore hands-free</div></div></div>
+
+    <div class="ti"><div class="tt">14:30</div><div class="dot" style="background:#3B6D11;box-shadow:0 0 0 3px #EAF3DE"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">⛪</span><span class="lbl">Duomo di Milano</span><span class="bk">BOOK</span></div>
+      <div class="sub">Cathedral + rooftop terraces · book ahead</div>
+      <div class="tip" style="background:#EAF3DE;color:#27500A">→ Pay for rooftop terrace access — walk among the marble spires above the city. Then have a Campari Spritz at a café on the Piazza del Duomo and people-watch.</div></div></div>
+
+    <div class="ti"><div class="tt">16:30</div><div class="dot" style="background:#3B6D11;box-shadow:0 0 0 3px #EAF3DE"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🛍️</span><span class="lbl">Galleria Vittorio Emanuele II</span></div>
+      <div class="sub">World's oldest shopping gallery · spin the bull for luck!</div>
+      <div class="tip" style="background:#EAF3DE;color:#27500A">→ Find the mosaic bull on the floor, spin your heel on it for good luck (everyone does it!). Browse Prada and Gucci even if just window shopping — the architecture is free to enjoy.</div></div></div>
+
+    <div class="ti"><div class="tt">18:00</div><div class="dot" style="background:#3B6D11;box-shadow:0 0 0 3px #EAF3DE"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Dinner · Giacomo Arengario</span></div>
+      <div class="sub">Rooftop restaurant with Duomo views · book ahead</div></div></div>
+
+    <div class="ti"><div class="tt">21:30</div><div class="dot" style="background:#3B6D11;box-shadow:0 0 0 3px #EAF3DE"></div>
+      <div class="tc tr"><div class="tc-top"><span class="ico">🚂</span><span class="lbl">Night Train to Rome</span><span class="dn">✅ Done</span></div>
+      <div class="sub">Intercity Notte · couchette berth · arrives Rome ~06:30</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 5: JUN 12 -->
+<div class="day" id="d5">
+  <div class="dhead" style="background:#FAECE7;border-left:4px solid #993C1D">
+    <div class="dtag" style="color:#993C1D">Jun 12 · Friday · Rome — Ancient City 🇮🇹</div>
+    <div class="dnote" style="color:#712B13">⏰ Colosseum Arena tickets release May 13 at 2:00 AM Chicago time — set your alarm!</div>
+  </div>
+  <div class="tl">
+    <div class="ti"><div class="tt">06:30</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc lg"><div class="tc-top"><span class="ico">🚉</span><span class="lbl">Arrive Rome Termini</span></div>
+      <div class="sub">From night train · check in · hotel holds luggage if room not ready</div></div></div>
+
+    <div class="ti"><div class="tt">08:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">⛲</span><span class="lbl">Trevi Fountain</span></div>
+      <div class="sub">Go before 9 AM — far fewer crowds</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Toss a coin with your right hand over your left shoulder — legend says you'll return to Rome. Get a cornetto and cappuccino at the café right behind the fountain.</div></div></div>
+
+    <div class="ti"><div class="tt">08:45</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🏛️</span><span class="lbl">Pantheon</span></div>
+      <div class="sub">€5 entry · book online · 2,000-year-old Roman temple</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Stand in the centre and look straight up at the oculus — the open hole in the dome that's been there for 2,000 years. On a sunny day a beam of light moves across the interior like a clock.</div></div></div>
+
+    <div class="ti"><div class="tt">10:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🏟️</span><span class="lbl">Piazza Navona</span></div>
+      <div class="sub">Free · Bernini's fountains · terrace coffee</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Sit at one of the terrace cafés and order a coffee — yes it's touristy but the piazza view is worth every euro. Watch the street artists and portrait painters work.</div></div></div>
+
+    <div class="ti"><div class="tt">13:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Lunch · Antica Birreria</span></div></div></div>
+
+    <div class="ti"><div class="tt">14:30</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">⚔️</span><span class="lbl">Colosseum — Arena Floor</span><span class="bk">BOOK</span></div>
+      <div class="sub">Full Experience Arena · Gladiator's Gate entry · 2–3 hours</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ When you walk through the Gladiator's Gate onto the arena floor, stop and look up slowly at the 4 levels of arches surrounding you. Take that moment in — 80,000 Romans once watched here.</div></div></div>
+
+    <div class="ti"><div class="tt">17:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🏛️</span><span class="lbl">Roman Forum + Palatine Hill</span></div>
+      <div class="sub">Included in Colosseum ticket · valid 2 days</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Walk the Via Sacra (the main road of ancient Rome) all the way through. End at the top of Palatine Hill for sunset — the view over the Forum with the Colosseum in the background is unforgettable.</div></div></div>
+
+    <div class="ti"><div class="tt">19:30</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🌉</span><span class="lbl">Trastevere Evening</span></div>
+      <div class="sub">Rome's most atmospheric neighbourhood at night</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Get lost on purpose in the cobbled streets — no map, just wander. Pop into Santa Maria in Trastevere basilica (free), then find a quiet piazza and have an Aperol Spritz before dinner.</div></div></div>
+
+    <div class="ti"><div class="tt">20:30</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Dinner · Da Enzo al 29</span></div>
+      <div class="sub">Tiny trattoria · very popular · reserve in advance</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 6: JUN 13 -->
+<div class="day" id="d6">
+  <div class="dhead" style="background:#FAECE7;border-left:4px solid #993C1D">
+    <div class="dtag" style="color:#993C1D">Jun 13 · Saturday · Rome — Vatican Day 🇮🇹</div>
+    <div class="dnote" style="color:#712B13">Saturday is Vatican's busiest day. Arrive right at 8 AM opening.</div>
+  </div>
+  <div class="tl">
+    <div class="ti"><div class="tt">08:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🎨</span><span class="lbl">Vatican Museums + Sistine Chapel</span><span class="dn">✅ Done</span></div>
+      <div class="sub">Cover shoulders + knees · no photos in Sistine Chapel</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Don't rush to the Sistine Chapel — walk slowly through the Gallery of Maps and Raphael Rooms first. When you enter the Sistine Chapel, find a spot on the benches along the wall, sit, and look up for at least 5 minutes.</div></div></div>
+
+    <div class="ti"><div class="tt">11:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">⛪</span><span class="lbl">St. Peter's Basilica</span></div>
+      <div class="sub">Free entry · Michelangelo's Pietà · climb the dome</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Find the Pietà (Mary holding Jesus) and stand in front of it quietly — it's behind glass but still stunning. Then climb the dome — take the lift halfway and walk the rest. The view from the top is the best in Rome.</div></div></div>
+
+    <div class="ti"><div class="tt">13:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Lunch · Prati neighbourhood</span></div>
+      <div class="sub">Right next to the Vatican · many great options</div></div></div>
+
+    <div class="ti"><div class="tt">14:30</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🏛️</span><span class="lbl">Roman Forum + Palatine Hill</span></div>
+      <div class="sub">Use Colosseum combo ticket (valid 2 consecutive days)</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ If you didn't finish yesterday, go deeper today — visit the House of Augustus with its vivid frescoes. End at sunset on Palatine Hill looking over the Forum — the light at this hour is extraordinary.</div></div></div>
+
+    <div class="ti"><div class="tt">17:30</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🌅</span><span class="lbl">Sunset from Palatine Hill</span></div>
+      <div class="sub">Best panoramic view over the entire Forum</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Find a spot on the hill's edge, sit down and don't rush this. You can see the Colosseum, the Forum, and the entire Rome skyline bathed in golden light — take it all in slowly.</div></div></div>
+
+    <div class="ti"><div class="tt">20:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Dinner · Hostaria Pietro</span></div>
+      <div class="sub">Traditional Roman cuisine</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 7: JUN 14 -->
+<div class="day" id="d7">
+  <div class="dhead" style="background:#FAECE7;border-left:4px solid #993C1D">
+    <div class="dtag" style="color:#993C1D">Jun 14 · Sunday · Rome — Farewell Day 🇮🇹</div>
+    <div class="dnote" style="color:#712B13">Sunday + Pope's Angelus at noon = a truly once-in-a-lifetime Roman morning.</div>
+  </div>
+  <div class="tl">
+    <div class="ti"><div class="tt">09:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🌳</span><span class="lbl">Orange Garden — Aventine Hill</span></div>
+      <div class="sub">Best free panoramic viewpoint in Rome</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Find a bench under the orange trees facing St. Peter's dome and just sit quietly — this is one of the most beautiful and peaceful spots in all of Rome. Perfect for a morning coffee from a nearby bar.</div></div></div>
+
+    <div class="ti"><div class="tt">09:30</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🔑</span><span class="lbl">Knights of Malta Keyhole</span></div>
+      <div class="sub">5-min walk · three countries through one keyhole!</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Peek through the keyhole in the big wooden door — you'll see Italy, the Vatican and the territory of the Knights of Malta all perfectly aligned with St. Peter's dome at the end. Takes 30 seconds, unforgettable forever.</div></div></div>
+
+    <div class="ti"><div class="tt">10:30</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🌹</span><span class="lbl">Roseto Comunale</span></div>
+      <div class="sub">Rome's rose garden · free in June · in full bloom!</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Walk slowly through the terraced rose beds — over 1,100 varieties all blooming in June. It's free, almost nobody is there, and the scent is incredible. Stop at the viewpoint over the Circus Maximus.</div></div></div>
+
+    <div class="ti"><div class="tt">12:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">⛪</span><span class="lbl">Pope's Angelus — St. Peter's Square</span></div>
+      <div class="sub">Free · Pope speaks from his window every Sunday at noon</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Arrive by 11:30 AM and stand in the square looking up at the Pope's window. When he appears the whole crowd goes quiet — it's a genuinely moving moment even if you're not religious. Completely free.</div></div></div>
+
+    <div class="ti"><div class="tt">13:30</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Farewell Lunch · Taverna Romana</span></div></div></div>
+
+    <div class="ti"><div class="tt">15:30</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🛍️</span><span class="lbl">Spanish Steps + Via Condotti</span></div>
+      <div class="sub">Iconic staircase · luxury shopping street</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Sit on the steps with a gelato and watch the world go by. Then walk down Via Condotti — even if you're not buying, the windows of Gucci, Bulgari and Valentino are spectacular to browse.</div></div></div>
+
+    <div class="ti"><div class="tt">17:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🎨</span><span class="lbl">Via Margutta</span></div>
+      <div class="sub">Rome's most charming artist street · ivy-covered walls</div>
+      <div class="tip" style="background:#FAECE7;color:#712B13">→ Browse the art studios and small galleries — many artists sell prints and originals. A beautiful place to find a unique souvenir. The street itself is incredibly photogenic with all the ivy.</div></div></div>
+
+    <div class="ti"><div class="tt">20:00</div><div class="dot" style="background:#993C1D;box-shadow:0 0 0 3px #FAECE7"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Farewell Dinner · Tonnarello</span></div>
+      <div class="sub">Classic Roman trattoria in Trastevere</div></div></div>
+  </div>
+</div>
+
+<!-- DAY 8: JUN 15 -->
+<div class="day" id="d8">
+  <div class="dhead" style="background:#F1EFE8;border-left:4px solid #5F5E5A">
+    <div class="dtag" style="color:#5F5E5A">Jun 15 · Monday · Rome → São Paulo ✈️</div>
+    <div class="dnote" style="color:#444441">⚠️ Borghese Gallery: book TODAY — the hardest ticket in Rome. Sells out weeks ahead.</div>
+  </div>
+  <div class="tl">
+    <div class="ti"><div class="tt">09:00</div><div class="dot" style="background:#5F5E5A;box-shadow:0 0 0 3px #F1EFE8"></div>
+      <div class="tc si"><div class="tc-top"><span class="ico">🖼️</span><span class="lbl">Borghese Gallery</span><span class="bk">BOOK</span></div>
+      <div class="sub">Mandatory 2-hour slot · Bernini + Caravaggio · arrive on time!</div>
+      <div class="tip" style="background:#F1EFE8;color:#444441">→ Go straight to Room 3 for Bernini's Apollo & Daphne — stand in front of it and walk slowly around it. The detail is impossible. Then find Caravaggio's paintings in Room 8. You only have 2 hours so focus on these.</div></div></div>
+
+    <div class="ti"><div class="tt">11:15</div><div class="dot" style="background:#5F5E5A;box-shadow:0 0 0 3px #F1EFE8"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🌿</span><span class="lbl">Villa Borghese Gardens</span></div>
+      <div class="sub">Stroll the park · rent a rowboat on the lake</div>
+      <div class="tip" style="background:#F1EFE8;color:#444441">→ Rent a rowboat on the little lake — €5 for 20 minutes. Row slowly, look at the trees and the Roman sky above you. A perfect, peaceful last memory of Rome.</div></div></div>
+
+    <div class="ti"><div class="tt">13:00</div><div class="dot" style="background:#5F5E5A;box-shadow:0 0 0 3px #F1EFE8"></div>
+      <div class="tc ml"><div class="tc-top"><span class="ico">🍽️</span><span class="lbl">Last Lunch in Rome</span></div>
+      <div class="sub">Giolitti for gelato after — Rome's oldest gelateria since 1900</div></div></div>
+
+    <div class="ti"><div class="tt">14:30</div><div class="dot" style="background:#5F5E5A;box-shadow:0 0 0 3px #F1EFE8"></div>
+      <div class="tc wk"><div class="tc-top"><span class="ico">🛍️</span><span class="lbl">Last stroll + souvenirs</span></div>
+      <div class="sub">Via Margutta · final gelato · last memories</div></div></div>
+
+    <div class="ti"><div class="tt">17:00</div><div class="dot" style="background:#5F5E5A;box-shadow:0 0 0 3px #F1EFE8"></div>
+      <div class="tc tr"><div class="tc-top"><span class="ico">🚕</span><span class="lbl">Transfer to FCO Airport</span></div>
+      <div class="sub">Allow 1 hour+ · check-in 3 hours early</div></div></div>
+
+    <div class="ti"><div class="tt">21:25</div><div class="dot" style="background:#5F5E5A;box-shadow:0 0 0 3px #F1EFE8"></div>
+      <div class="tc tr"><div class="tc-top"><span class="ico">✈️</span><span class="lbl">Flight FCO → GRU via MAD</span></div>
+      <div class="sub">Air Europa · 4h45 layover in Madrid · see you in São Paulo! 🇧🇷</div></div></div>
+  </div>
+</div>
+
+</div><!-- end wrap -->
+
+<div style="text-align:center;padding:24px;font-size:12px;color:#aaa">🌍 Europe 2026 · Made with ❤️</div>
+
+<script>
+var colors=["#534AB7","#185FA5","#185FA5","#185FA5","#3B6D11","#993C1D","#993C1D","#993C1D","#5F5E5A"];
+function show(n){
+  document.querySelectorAll('.day').forEach(function(d){d.classList.remove('on')});
+  document.querySelectorAll('.nb').forEach(function(b){b.classList.remove('on');b.style.background='';b.style.borderColor=''});
+  document.getElementById('d'+n).classList.add('on');
+  var btns=document.querySelectorAll('.nb');
+  btns[n].classList.add('on');
+  btns[n].style.background=colors[n];
+  btns[n].style.borderColor=colors[n];
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
